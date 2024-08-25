@@ -1,0 +1,131 @@
+/* Reset default browser styles and set box-sizing to border-box for all elements */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Set font family and background color for the body */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f0f0;
+}
+
+/* Main container styling, using CSS Grid to define the layout */
+.container {
+	display: grid;
+	grid-template-rows: 100px 1fr 50px;
+	height: 100vh;
+}
+
+/* Header styling: background color, text color, padding, and layout */
+.header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/* Profile picture styling: size and margin */
+.profile-pic {
+	width: 115px;
+	height: 75px;
+	margin-right: 20px;
+}
+
+/* Container for the profile picture and header info */
+.header-left {
+	display: flex;
+	align-items: center;
+}
+
+/* Margin for the header information */
+.header-info {
+	margin-left: 20px;
+}
+
+/* Navigation bar styling: layout and margin */
+.nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+/* Unordered list styling for the navigation links */
+.nav ul {
+	display: flex;
+}
+
+/* Margin for list items in the navigation */
+.nav li {
+	margin-right: 20px;
+}
+
+/* Styling for navigation links: color and text decoration */
+.nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Main content area styling: grid layout, gap between elements, and padding */
+.main-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 20px;
+	padding: 20px;
+}
+
+/* Container for the pepeha section: flex layout and gap */
+.pepeha-container {
+	display: flex;
+	gap: 20px;
+}
+
+/* Pepeha section styling: background color and padding */
+.pepeha {
+	background-color: #fff;
+	padding: 20px;
+}
+
+/* Pepeha image styling: size, object fit, and margin */
+.pepeha-image {
+	width: 300px;
+	height: 200px;
+	object-fit: cover;
+	margin: 20px;
+}
+
+/* Container for the pepeha text: flex layout, alignment, and padding */
+.pepeha-text-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+/* Styling for the pepeha text box: background color, padding, border, and shadow */
+.pepeha-text-box {
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling for the pepeha text: font size, line height, and text alignment */
+.pepeha-text {
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: justify;
+}
+
+/* Footer styling: background color, text color, padding, text alignment, and grid row placement */
+.footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	grid-row: 3;
+}
